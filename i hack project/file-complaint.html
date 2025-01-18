@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File a Complaint</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="logo.png" alt="Logo" class="logo" style="width: 200px; height: auto;">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="file-complaint.html">File a Complaint</a></li>
+                <li><a href="search-complaints.html">Search Complaints</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="file-complaint-form">
+            <h1>File a Complaint</h1>
+            <form id="complaint-form" onsubmit="return handleFormSubmit(event)">
+                <!-- User Information Section -->
+                <div class="form-section">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+
+                    <label for="game-username">Game Username</label>
+                    <input type="text" id="game-username" name="game-username" required>
+
+                    <label for="city">City Name</label>
+                    <input type="text" id="city" name="city" required>
+
+                    <label for="registered-email">Registered Game Email</label>
+                    <input type="email" id="registered-email" name="registered-email" required>
+
+                    <label for="phone-number">Phone Number</label>
+                    <input type="tel" id="phone-number" name="phone-number" required>
+                </div>
+
+                <!-- Game Details Section -->
+                <div class="form-section">
+                    <label for="game-name">Game Name</label>
+                    <input type="text" id="game-name" name="game-name" required>
+
+                    <label for="developer-name">Developer Name</label>
+                    <input type="text" id="developer-name" name="developer-name" required>
+                </div>
+
+                <!-- Complaint Category Section -->
+                <div class="form-section">
+                    <label for="complaint-category">Complaint Category</label>
+                    <div class="category-options">
+                        <input type="radio" id="harassment" name="category" value="Harassment">
+                        <label for="harassment">Harassment</label>
+                        <input type="radio" id="fraud" name="category" value="Fraud">
+                        <label for="fraud">Fraud</label>
+                        <input type="radio" id="addiction" name="category" value="Addiction">
+                        <label for="addiction">Addiction</label>
+                    </div>
+                </div>
+
+                <!-- Description Section -->
+                <div class="form-section">
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description" required></textarea>
+                </div>
+
+                <!-- Proof Section -->
+                <div class="form-section">
+                    <label for="proof">Upload Proof (Image/Video)</label>
+                    <input type="file" id="proof" name="proof" accept="image/*, video/*">
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn">Submit Complaint</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Gaming Complaint Platform</p>
+    </footer>
+</body>
+</html>

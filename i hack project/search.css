@@ -1,0 +1,377 @@
+/* General styles for the page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url('https://img.freepik.com/premium-vector/vector-dynamic-line-dark-technology-background_93566-14.jpg');
+    background-size: cover;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .logo {
+    width: 50px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+/* Sorting options */
+.sorting-options {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.sorting-options label {
+    font-size: 1.2rem;
+    margin-right: 10px;
+    color: white;
+}
+
+.sorting-options select {
+    padding: 5px 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+/* Complaint list styles */
+.complaints-list {
+    margin-top: 20px;
+}
+
+.complaints-list h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#complaints-list {
+    list-style: none;
+    padding: 0;
+}
+
+.complaint-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.complaint-item:hover {
+    transform: translateY(-5px);
+}
+
+.complaint-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.complaint-item p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.complaint-item .tags {
+    margin-top: 10px;
+}
+
+.complaint-item .tags span {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+.complaint-item .proof {
+    margin-top: 10px;
+}
+
+.complaint-item .proof img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Status badge for resolved/unresolved */
+.resolved {
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.unresolved {
+    background-color: #dc3545;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+  
+    bottom: 0;
+    width: 100%;
+}
+
+/* Add styles for sorting dropdown and icons */
+.sorting-options {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.sorting-options label {
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.sorting-options select {
+    padding: 5px 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+/* Icon styles within the select dropdown */
+.sorting-options select i {
+    margin-left: 5px;
+    font-size: 1.2rem;
+}
+
+/* Complaint list styles */
+.complaints-list {
+    margin-top: 20px;
+}
+
+.complaints-list h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#complaints-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Add icons to complaint items */
+.complaint-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.complaint-item:hover {
+    transform: translateY(-5px);
+}
+
+.complaint-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.complaint-item p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+/* Icon for likes and proof */
+.complaint-item .likes {
+    font-size: 1.2rem;
+    color: #007bff;
+}
+
+.complaint-item .proof img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Status badge with icons */
+.complaint-item .tags {
+    margin-top: 10px;
+}
+
+.complaint-item .tags span {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+.resolved {
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.unresolved {
+    background-color: #dc3545;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Icon for Resolved/Unresolved status */
+.resolved i,
+.unresolved i {
+    margin-right: 5px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    
+    bottom: 0;
+    width: 100%;
+}
+
+/* General styles for complaint items */
+.complaint-item {
+    display: flex;
+    justify-content: space-between; /* Align content and proof side by side */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.complaint-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Complaint content area */
+.complaint-content {
+    flex: 1; /* Allow content to take up available space */
+    margin-right: 20px; /* Add some space between content and proof */
+}
+
+.complaint-content h3,
+.complaint-content p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.complaint-content .tags {
+    margin-top: 10px;
+}
+
+.complaint-content .tags span {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+.complaint-content .likes {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-top: 10px;
+}
+
+.complaint-content .status {
+    margin-top: 10px;
+}
+
+.complaint-content .resolved {
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Proof section (Right side) */
+.complaint-proof {
+    flex-shrink: 0; /* Prevent the proof image from shrinking */
+    width: 250px; /* Set width for the proof section */
+}
+
+.complaint-proof .proof-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    object-fit: cover; /* Ensures the image fills the area without distortion */
+}
+
+/* Green stamp for resolved issues */
+.resolved-stamp {
+    background-color: #28a745; /* Green background */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* To make the confirmation text look prominent */
+.confirmation {
+    background-color: #e0f7e0; /* Light green background */
+    border-left: 5px solid #28a745; /* Green left border */
+    padding: 10px;
+    margin-top: 15px;
+}
+
+/* For better visibility of complaint info */
+.complaint-info {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}

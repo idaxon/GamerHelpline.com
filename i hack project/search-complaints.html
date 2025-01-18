@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Complaints</title>
+    <link rel="stylesheet" href="search.css">
+    <!-- Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="logo.png" alt="Logo" class="logo" style="width: 200px; height: auto;">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="file-complaint.html">File a Complaint</a></li>
+                <li><a href="search-complaints.html">Search Complaints</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="complaints-list">
+            <h1>Browse Complaints</h1>
+
+            <!-- Sorting options with icons -->
+            <div class="sorting-options">
+                <label for="sort-by">Sort By:</label>
+                <select id="sort-by" onchange="sortComplaints()">
+                    <option value="date">Most Recent <i class="fas fa-sort-amount-down"></i></option>
+                    <option value="likes">Most Liked <i class="fas fa-thumbs-up"></i></option>
+                    <option value="status">Resolved/Unresolved <i class="fas fa-exclamation-circle"></i></option>
+                </select>
+            </div>
+<!-- Complaint Item Example -->
+<li class="complaint-item">
+    <div class="complaint-content">
+        <h3>Game Name: Call of Duty: Warzone</h3>
+        <p>Developer: Activision</p>
+        <p>Category: Harassment</p>
+        <p>Description: Player reported for abusive language and offensive behavior in the lobby.</p>
+        
+        <!-- Tags, Likes, and Status -->
+        <div class="tags">
+            <span>Important</span>
+            <span>Urgent</span>
+        </div>
+        <div class="likes">
+            <i class="fas fa-thumbs-up"></i> 120 Likes
+        </div>
+        <div class="status">
+            <span class="resolved">
+                <i class="fas fa-check-circle"></i> Resolved
+            </span>
+        </div>
+
+        <!-- Username, Date, and Time -->
+        <p class="complaint-info">
+            <strong>Posted By:</strong> user123 | <strong>Date Posted:</strong> 2025-01-10 | <strong>Time:</strong> 15:30
+        </p>
+    </div>
+
+    <!-- Proof Section (Right side) -->
+    <div class="complaint-proof">
+        <img src="https://i.ytimg.com/vi/2NXqjsqnNnI/hqdefault.jpg" alt="Proof" class="proof-img">
+        
+        <!-- Green Proof Stamp for Resolved Issues -->
+        <div class="proof-stamp resolved-stamp">
+            <p>Problem Solved <i class="fas fa-check-circle"></i></p>
+        </div>
+        
+        <!-- Confirmation by User -->
+        <div class="confirmation">
+            <p>User Confirmation: <strong>Problem has been resolved and issue is closed.</strong></p>
+        </div>
+    </div>
+</li>
+
+<li class="complaint-item">
+    <div class="complaint-content">
+        <h3>Game Name: Fortnite</h3>
+        <p>Developer: Epic Games</p>
+        <p>Category: Fraud</p>
+        <p>Description: Reports of fraudulent in-game purchases and scams involving fake skins and items.</p>
+        
+        <!-- Tags, Likes, and Status -->
+        <div class="tags">
+            <span>Urgent</span>
+        </div>
+        <div class="likes">
+            <i class="fas fa-thumbs-up"></i> 85 Likes
+        </div>
+        <div class="status">
+            <span class="unresolved">
+                <i class="fas fa-exclamation-circle"></i> Unresolved
+            </span>
+        </div>
+
+        <!-- Username, Date, and Time -->
+        <p class="complaint-info">
+            <strong>Posted By:</strong> gamer456 | <strong>Date Posted:</strong> 2025-01-12 | <strong>Time:</strong> 16:00
+        </p>
+    </div>
+
+    <!-- Proof Section (Right side) -->
+    <div class="complaint-proof">
+        <img src="https://www.thesslstore.com/blog/wp-content/uploads/2019/01/bigstock-Amsterdam-The-Netherlands-S-260754244-698x419.jpg" alt="Proof" class="proof-img">
+    </div>
+</li>
+
+<li class="complaint-item">
+    <div class="complaint-content">
+        <h3>Game Name: League of Legends</h3>
+        <p>Developer: Riot Games</p>
+        <p>Category: Addictive Behavior</p>
+        <p>Description: The game is causing excessive screen time leading to addiction and impacting player health.</p>
+        
+        <!-- Tags, Likes, and Status -->
+        <div class="tags">
+            <span>Important</span>
+        </div>
+        <div class="likes">
+            <i class="fas fa-thumbs-up"></i> 150 Likes
+        </div>
+        <div class="status">
+            <span class="resolved">
+                <i class="fas fa-check-circle"></i> Resolved
+            </span>
+        </div>
+
+        <!-- Username, Date, and Time -->
+        <p class="complaint-info">
+            <strong>Posted By:</strong> player789 | <strong>Date Posted:</strong> 2025-01-15 | <strong>Time:</strong> 10:30
+        </p>
+    </div>
+
+    <!-- Proof Section (Right side) -->
+    <div class="complaint-proof">
+        <img src="https://images.1v9.gg/time-played-lol-19f2bb8e7753.webp" alt="Proof" class="proof-img">
+        
+        <!-- Green Proof Stamp for Resolved Issues -->
+        <div class="proof-stamp resolved-stamp">
+            <p>Problem Solved <i class="fas fa-check-circle"></i></p>
+        </div>
+        
+        <!-- Confirmation by User -->
+        <div class="confirmation">
+            <p>User Confirmation: <strong>Problem has been resolved and issue is closed.</strong></p>
+        </div>
+    </div>
+</li>
+
+<!-- Additional complaint items can follow in the same structure -->
+
+    
+    
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Gaming Complaint Platform</p>
+    </footer>
+
+    <script src="search.js"></script>
+</body>
+</html>

@@ -1,0 +1,384 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    background-size: cover;
+    background-image: url('https://img.freepik.com/premium-vector/vector-dynamic-line-dark-technology-background_93566-14.jpg');
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+main {
+    padding: 40px 20px;
+}
+
+.hero {
+   
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    background-image: url('https://media3.giphy.com/media/VGszMsb3b6wMHPRs5S/200.gif?cid=6c09b952bm50iv6lgldgum9nz6q5s0oh5crv470gxthfwix8&ep=v1_gifs_search&rid=200.gif&ct=g');
+    background-size: cover;
+    height: 600px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    height: 250px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+
+}
+
+.cta-button {
+    background-color: #ff5f00;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin: 10px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #185703;
+}
+
+.cta-button.secondary {
+    background-color: #28a745;
+}
+
+.cta-button.secondary:hover {
+    background-color: #a80e0e;
+}
+
+.top-reports {
+    margin-bottom: 40px;
+}
+
+.top-reports h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.reports-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.report-item {
+    background-color: rgb(224, 229, 212);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(255, 215, 0,);
+    flex: 1 1 calc(33% - 20px);
+    max-width: calc(33% - 20px);
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.report-item:hover {
+    transform: translateY(-10px);
+}
+
+.report-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.report-item p {
+    font-size: 1rem;
+    color: #555;
+    margin: 10px 0;
+}
+
+.report-item .tags {
+    margin-top: 15px;
+}
+
+.report-item .tags span {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* General Form Styling */
+.file-complaint-form {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+.form-section label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-section input,
+.form-section textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-section input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+.category-options label {
+    margin-right: 20px;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .file-complaint-form {
+        padding: 10px;
+    }
+    .form-section input, .form-section textarea {
+        font-size: 14px;
+    }
+}
+
+.about {
+    color: #f4f4f4;
+}
+
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+   
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: black;
+}
+
+.navbar img {
+    width: 50px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.cta-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.cta-button.secondary {
+    background-color: #333;
+}
+
+/* Top Reports Section */
+.top-reports {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.top-reports h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* How It Works Section */
+.how-it-works {
+    padding: 50px 20px;
+   
+    color: white;
+    text-align: center;
+}
+
+.how-it-works h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+/* Flowchart Style (Horizontal Steps) */
+.steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.step {
+    background-color: #333;
+    padding: 30px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: white;
+}
+
+.step i {
+    font-size: 3rem;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.step h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.step p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.logo {
+    width: 500px; 
+}

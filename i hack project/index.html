@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Complaint Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="logo.png" alt="Logo" class="logo" style="width: 200px; height: auto;">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="file-complaint.html"><i class="fas fa-exclamation-circle"></i> File a Complaint</a></li>
+                <li><a href="search-complaints.html"><i class="fas fa-search"></i> Search Complaints</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="complaint-status.html"><i class="fas fa-tasks"></i> Status</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Take a Stand. <br><br>Report Gaming Issues Now!</h1>
+            <p>Your complaints matter. Help improve the gaming community by sharing your experience.</p>
+            <a href="file-complaint.html" class="cta-button">File a Complaint</a>
+            <a href="search-complaints.html" class="cta-button secondary">Browse Complaints</a>
+        </section>
+
+        <!-- Top Reports Section -->
+        <section class="top-reports">
+            <h2>Top Complaints</h2>
+            <div class="reports-list" id="top-reports-list">
+                <!-- Dynamic Top Complaints will be inserted here -->
+            </div>
+        </section>
+
+        <!-- How It Works Section (Flowchart style) -->
+        <section class="how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>File a Complaint</h3>
+                    <p>Use our easy-to-navigate interface to file a complaint against harassment, cheating, or any other issue you encounter in the gaming world.</p>
+                </div>
+                <div class="step">
+                    <i class="fas fa-search"></i>
+                    <h3>Track Your Complaint</h3>
+                    <p>Once your complaint is filed, you can track its progress and see updates about its resolution.</p>
+                </div>
+                <div class="step">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Get Resolution</h3>
+                    <p>Our team reviews your complaint and works toward a resolution, ensuring a better experience for everyone in the gaming community.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Gaming Complaint Platform. All Rights Reserved.</p>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

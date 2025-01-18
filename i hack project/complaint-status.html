@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint Status</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="status.js" defer></script>
+
+    <!-- Style to change font color to white -->
+    <style>
+        body, header, footer, p, h1, h2, button {
+            color: white;
+        }
+
+        /* Optional: Change background color to make text stand out */
+        body {
+            background-color: #333;  /* Dark background to contrast with white text */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="logo.png" alt="Logo" class="logo" style="width: 200px; height: auto;">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="file-complaint.html">File a Complaint</a></li>
+                <li><a href="search-complaints.html">Search Complaints</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="complaint-status">
+            <h1>Complaint Status</h1>
+
+            <!-- Complaint Details -->
+            <div id="complaint-details" class="details-container">
+                <div class="details">
+                    <p><strong>Username:</strong> <span id="complainant-username"></span></p>
+                    <p><strong>Game Username:</strong> <span id="complainant-game-username"></span></p>
+                    <p><strong>Game Name:</strong> <span id="game-name"></span></p>
+                    <p><strong>Developer Name:</strong> <span id="developer-name"></span></p>
+                    <p><strong>Complaint Category:</strong> <span id="complaint-category"></span></p>
+                    <p><strong>Description:</strong> <span id="complaint-description"></span></p>
+                </div>
+
+                <div class="status-section">
+                    <p>Status: <span id="status">Unresolved</span></p>
+                    <div id="status-indicator" class="status-indicator unresolved">
+                        <p>Unresolved</p>
+                    </div>
+                </div>
+
+               
+<button id="proceed-btn" class="proceed-btn" style="color: black;">Mark as Solved</button>
+
+
+<div id="popup" class="popup" style="display: none;">
+    <div class="popup-content" style="color: black; font-family: Arial, sans-serif;">
+        <p style="color: black;">Is the issue solved?</p>
+        <button id="mark-solved" class="popup-btn solved" style="color: black;">Yes, the problem is solved</button>
+        <button id="mark-unsolved" class="popup-btn unresolved" style="color: black;">No, the problem is not solved</button>
+    </div>
+</div>
+
+        </section>
+    </main>
+
+  
